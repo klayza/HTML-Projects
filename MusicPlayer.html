@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 3 Brain Tumor</title>
+</head>
+<body>
+
+    <!-- Boring music no one wants to hear
+    <h2>Yea Ye ye</h2>
+    <audio controls><source src="https://216.92.84.114/1-29-16.mp3" type="audio/mpeg"></audio>    
+
+    <h2>can sing</h2>
+    <audio controls><source src="https://216.92.84.114/10-31-15.mp3"></audio>
+    -->
+    <h1>Animals of the world <a onclick="Chbg('monkey')">🐒</a><a onclick="Chbg('default')">🔁</a></h1>
+    <hr width="100%" >
+
+    <h2>horseboi</h2>
+    <a onclick="playsd('neigh');"><img class="jpg" src="https://live.staticflickr.com/2143/2284234538_32608c13d8_b.jpg" width="300"></a>
+    <hr width="100%" >
+
+    <h2>duck with da hat</h2>
+    <a onclick="playsd('duck');"><img class="jpg" src="https://preview.redd.it/pfz3qwz6vgd21.jpg?auto=webp&s=cdf2adf3745eb9ccdf1d4f67b3136fac9fcf6cde" width="300"></a>
+    <hr width="100%" >
+
+    <h2>cat?     click em...</h2>
+    <a onclick="playsd('meow');"><img class="jpg" title="CLICK ME!!!" src="https://clayza.neocities.org/assets/KAT.png"></a>
+    <hr width="100%" >
+    
+    <h2>chicken?</h2>
+    <a onclick="playsd('chicken');"><img class="jpg" src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_96502416_2000142820009280128_130348.jpg" width="450" height="250px"></a><br>
+    <hr width="100%" >
+
+    <h2>munkey</h2>
+    <a onmouseover="playsd('bubble');" style="padding-top: 15px;"><img class="jpg" src="https://c.tenor.com/6a6N6IW-OGsAAAAd/monkey-swimming.gif"></a><br>
+    <hr width="100%" >
+
+
+
+    <h1>Objects you wish you had never clicked</h1>
+    <hr width="100%" >
+
+    <a onclick="playsd('table');" style="padding: 30px;"><img src="assets/table.png"></a><br>
+    <hr width="100%" >
+
+    <a onclick="playsd('crack');"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png" width=210px height=210px></a><br>
+    <h1>End of webpage. Nothing below</h1>
+
+    <br style="margin-bottom: 1000px">
+    <h1>Seriously. Go back</h1>
+    <br style="margin-bottom: 2000px">
+
+    <h1>Last warning!</h1>
+    <br style="margin-bottom: 2000px">
+
+    <div onmouseover="Chbg('spook');" width="10000px"><br style="margin-bottom: 100%;"><h1 id="creepy">There's no turning back now...</h1></div>
+    <br style="margin-bottom: 2500px">
+
+    <a onclick="playsd('death');" title="Click if you dare..."><img class="jpg" src="https://steamuserimages-a.akamaihd.net/ugc/779599966134016433/62086075583E89E6D51BEFE86E0AF79D94B25811/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" width="450" height="250px"></a><br>
+
+
+    <a onclick="playsd('sorry');" style="position: fixed; bottom: 0%; left:0%;"><img src="assets/doritobag.png" width=50px height=51px></a>
+    <script>
+        var neigh = new Audio("https://www.myinstants.com/media/sounds/aud-20150922-wa0001.mp3")
+        var chicken = new Audio("https://www.myinstants.com/media/sounds/movie_1.mp3")
+        var meow = new Audio("https://www.myinstants.com/media/sounds/deep-ass-meow.mp3")
+        var bubble = new Audio("https://www.myinstants.com/media/sounds/bubbles.mp3")
+        var sorry = new Audio("assets/mlgc.mp3")
+        var table = new Audio("assets/table.mp3")
+        var crack = new Audio("https://www.myinstants.com/media/sounds/crack-kid-1.mp3")
+        var duck = new Audio("https://www.myinstants.com/media/sounds/quack_5.mp3")
+        var spook = new Audio("https://www.myinstants.com/media/sounds/hallway-ambiance-extended-five-nights-at-freddys-2-music.mp3")
+        var death = new Audio("https://www.myinstants.com/media/sounds/five-nights-at-freddys-2-full-scream-sound.mp3")
+        function playsd(sound){
+            if(sound == "neigh"){
+                neigh.play();
+            }
+            if(sound == "chicken"){
+                chicken.play();
+            }
+            if(sound == "meow"){
+                meow.play();
+            }
+            if(sound == "bubble"){
+                bubble.play();
+            }
+            if(sound == "sorry"){
+                sorry.play();
+            }
+            if(sound == "table"){
+                table.play();
+            }
+            if(sound == "crack"){
+                crack.play();
+            }
+            if(sound == "duck"){
+                duck.play();
+            }
+            if(sound == "spook"){
+                for(let i=0; i < 4; i++){
+                    spook.play();
+                }
+            }
+            if(sound == "death"){
+                death.play();
+            }
+        }
+        function Chbg(name){
+            if(name === "default"){
+                document.body.style.backgroundColor = "#fdf6e3";
+                document.body.style.backgroundImage = "none";
+            }
+            else if(name === "monkey"){
+                document.body.style.backgroundImage = "url('https://external-preview.redd.it/tZRi3Xsl3K18ZJeDfr-cN0uu3G-9ZMKUwzMeC3ej-2w.png?format=pjpg&auto=webp&s=20065250351cbadd8843f10c2b1f4dcbeec44b6a')";
+                document.body.style.backgroundSize = "100%";
+                document.title = "Monkey mode";
+            }
+            else if(name === "spook"){
+                playsd('spook');
+                document.body.style.backgroundColor = "black";
+                document.head.style.backgroundColor = "black";
+
+                /* This junk doesn't work
+                font.load().then(function(font) {
+                    document.font.add(font);
+                    document.getElementById("creepy").style.fontFamily = 'Spook Font';
+                }).catch(function(error){
+                    // error occured
+                });
+                */
+            }
+            else if(name === "death"){
+                playsd('death');
+                window.top.close();
+                document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/AlarmedUnfortunateBlueshark-size_restricted.gif')";
+                document.body.style.backgroundSize = "100%";
+            }
+        }
+    </script>
+</body>
+<style>
+    body {
+       display: table-cell;
+       vertical-align: middle;
+    }
+    h2, h1 {
+        color: #506066;
+    }
+    html {
+        background: #fdf6e3;
+        display: table;
+        margin: auto;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    @font-face {
+        font-family: Creepy;
+        src: url("assets/HelpMe.ttf");
+    }
+    #creepy {
+        font-family: Creepy;
+        color: red;
+    }
+</style>
+</html>
