@@ -7,7 +7,6 @@
     <title>Stage 3 Brain Tumor</title>
 </head>
 <body>
-
     <!-- Boring music no one wants to hear
     <h2>Yea Ye ye</h2>
     <audio controls><source src="https://216.92.84.114/1-29-16.mp3" type="audio/mpeg"></audio>    
@@ -59,7 +58,7 @@
     <div onmouseover="Chbg('spook');" width="10000px"><br style="margin-bottom: 100%;"><h1 id="creepy">There's no turning back now...</h1></div>
     <br style="margin-bottom: 2500px">
 
-    <a onclick="playsd('death');" title="Click if you dare..."><img class="jpg" src="https://steamuserimages-a.akamaihd.net/ugc/779599966134016433/62086075583E89E6D51BEFE86E0AF79D94B25811/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" width="450" height="250px"></a><br>
+    <a onclick="Chbg('death');" title="Click if you dare..."><img class="jpg" src="https://steamuserimages-a.akamaihd.net/ugc/779599966134016433/62086075583E89E6D51BEFE86E0AF79D94B25811/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" width="450" height="250px"></a><br>
 
 
     <a onclick="playsd('sorry');" style="position: fixed; bottom: 0%; left:0%;"><img src="assets/doritobag.png" width=50px height=51px></a>
@@ -110,18 +109,20 @@
         }
         function Chbg(name){
             if(name === "default"){
+                document.getElementsByTagName('html')[0].style.backgroundColor = "#fdf6e3";
+                document.getElementsByTagName('html')[0].style.backgroundImage = "none";
                 document.body.style.backgroundColor = "#fdf6e3";
                 document.body.style.backgroundImage = "none";
             }
             else if(name === "monkey"){
-                document.body.style.backgroundImage = "url('https://external-preview.redd.it/tZRi3Xsl3K18ZJeDfr-cN0uu3G-9ZMKUwzMeC3ej-2w.png?format=pjpg&auto=webp&s=20065250351cbadd8843f10c2b1f4dcbeec44b6a')";
-                document.body.style.backgroundSize = "100%";
+                document.getElementsByTagName('html')[0].style.backgroundImage = "url('https://external-preview.redd.it/tZRi3Xsl3K18ZJeDfr-cN0uu3G-9ZMKUwzMeC3ej-2w.png?format=pjpg&auto=webp&s=20065250351cbadd8843f10c2b1f4dcbeec44b6a')";
                 document.title = "Monkey mode";
             }
             else if(name === "spook"){
                 playsd('spook');
+                document.getElementsByTagName('html')[0].style.backgroundColor = "black";
+                document.getElementsByTagName('html')[0].style.backgroundImage = "none";
                 document.body.style.backgroundColor = "black";
-                document.head.style.backgroundColor = "black";
 
                 /* This junk doesn't work
                 font.load().then(function(font) {
@@ -134,9 +135,12 @@
             }
             else if(name === "death"){
                 playsd('death');
-                window.top.close();
+                document.getElementsByTagName('html')[0].style.backgroundColor = "black";
                 document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/AlarmedUnfortunateBlueshark-size_restricted.gif')";
                 document.body.style.backgroundSize = "100%";
+                
+
+
             }
         }
     </script>
