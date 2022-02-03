@@ -1,0 +1,82 @@
+body{
+    background: url("assets/borang.jpg") no-repeat fixed center;
+    background-color: #000000cd;
+    margin: 180px;
+    line-height: 1.6;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    color: #e9c6ba;
+    padding: 0 10px;
+    background-size: 100% 100%;
+}
+
+a {
+    color: #e89173;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+h1, h2, h3{
+    line-height: 1.2;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #e89173;
+    background-color: #e89173;
+}
+
+header {
+    border: 1px solid #e89173;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    border: 1px solid #e89173;
+    background: #000000cd;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.entry, h3{
+    border: 1px solid #e89173;
+    background: #000000cd;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.entry h2 {
+    word-break: break-all;
+}
+
+.image img {
+    background-color: #e89173;
+}
+
+.half {
+    max-width: 50%;
+}
