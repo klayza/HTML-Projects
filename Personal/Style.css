@@ -1,13 +1,12 @@
 body{
-    background: url("assets/borang.jpg") no-repeat fixed center;
-    background-color: #000000cd;
-    margin: 180px;
+    background: url("https://wallpaperaccess.com/full/2966450.png") no-repeat fixed center;
     line-height: 1.6;
     font-family: "Courier New", Courier, monospace;
     font-size: 18px;
     color: #e9c6ba;
     padding: 0 10px;
     background-size: 100% 100%;
+    margin: 180px;
 }
 
 a {
@@ -61,9 +60,9 @@ p {
     font-size: 20px;
 }
 
-.entry, h3{
+div {
     border: 1px solid #e89173;
-    background: #000000cd;
+    background: #000000e0;
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -79,4 +78,13 @@ p {
 
 .half {
     max-width: 50%;
+}
+
+span.a {
+    display: inline-block;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
 }
