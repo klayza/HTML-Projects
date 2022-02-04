@@ -1,5 +1,6 @@
 body{
-    background: url("https://wallpaperaccess.com/full/2966450.png") no-repeat fixed center;
+    /* background: url("https://wallpaperaccess.com/full/2966450.png") no-repeat fixed center; */
+    background: #1f1e1e;
     line-height: 1.6;
     font-family: "Courier New", Courier, monospace;
     font-size: 18px;
@@ -22,6 +23,10 @@ h1, h2, h3{
     text-align: center;
 }
 
+div > a, p {
+    text-align: center;
+}
+
 hr {
     border: 1px solid #e89173;
     background-color: #e89173;
@@ -36,7 +41,7 @@ header {
 
 nav {
     border: 1px solid #e89173;
-    background: #000000cd;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.fireworks-videos.com/wp-content/uploads/2020/05/2020-05-17_colorful-night-sky_stars-and-milky-way_2160p.jpg") no-repeat fixed center; 
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -62,10 +67,10 @@ p {
 
 div {
     border: 1px solid #e89173;
-    background: #000000e0;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.fireworks-videos.com/wp-content/uploads/2020/05/2020-05-17_colorful-night-sky_stars-and-milky-way_2160p.jpg") no-repeat fixed center; 
     padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .entry h2 {
