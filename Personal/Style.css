@@ -1,47 +1,48 @@
+:root{
+    --background-color: #bebebe;
+    --foreground-color: #ffffff;
+    --accent-color: #473d3d;
+    --font-color: #000000;
+}
+
+.dark-theme {
+    --background-color: #1f1e1e;
+    --foreground-color: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.fireworks-videos.com/wp-content/uploads/2020/05/2020-05-17_colorful-night-sky_stars-and-milky-way_2160p.jpg") no-repeat fixed center; 
+    --accent-color: #e89173;
+    --font-color: #e9c6ba;
+}
+
 body{
-    /* background: url("https://wallpaperaccess.com/full/2966450.png") no-repeat fixed center; */
-    background: #1f1e1e;
+    background: var(--background-color);
     line-height: 1.6;
     font-family: "Courier New", Courier, monospace;
     font-size: 18px;
-    color: #e9c6ba;
+    color: var(--font-color);
     padding: 0 10px;
     background-size: 100% 100%;
     margin: 180px;
 }
 
 a {
-    color: #e89173;
+    color: var(--font-color);
 }
 
 a:hover {
     font-weight: bold;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     line-height: 1.2;
     text-align: center;
 }
 
-div > a, p {
+a, p {
     text-align: center;
-}
-
-hr {
-    border: 1px solid #e89173;
-    background-color: #e89173;
-}
-
-header {
-    border: 1px solid #e89173;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 nav {
-    border: 1px solid #e89173;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.fireworks-videos.com/wp-content/uploads/2020/05/2020-05-17_colorful-night-sky_stars-and-milky-way_2160p.jpg") no-repeat fixed center; 
+    border: 1px solid var(--accent-color);
+    background: var(--foreground-color); 
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -57,32 +58,16 @@ ul{
   padding: 0;
 }
 
-h4 {
-    text-align: center;
-}
-
 p {
     font-size: 20px;
 }
 
 div {
-    border: 1px solid #e89173;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.fireworks-videos.com/wp-content/uploads/2020/05/2020-05-17_colorful-night-sky_stars-and-milky-way_2160p.jpg") no-repeat fixed center; 
+    border: 1px solid var(--accent-color);
+    background: var(--foreground-color); 
     padding: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
-}
-
-.entry h2 {
-    word-break: break-all;
-}
-
-.image img {
-    background-color: #e89173;
-}
-
-.half {
-    max-width: 50%;
 }
 
 span.a {
@@ -92,4 +77,8 @@ span.a {
 .icon {
     width: 30px;
     height: 30px;
+}
+
+#icon{
+    cursor: pointer;
 }

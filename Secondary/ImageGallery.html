@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Randomly generates images -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
 </head>
 <body>
     <h1>Clayton Wieberg</h1>
-    <h2>January 11, 2022</h2>
+    <h2>February 7, 2022</h2>
     <h2>Image Gallery<h2>
     <div>
         <img src="https://picsum.photos/201/300">
@@ -22,8 +23,13 @@
         <img src="https://picsum.photos/209/300">
         <img src="https://picsum.photos/210/300">
     </div>
+    <footer>
+        <p>Author: Clayton Wieberg</p>
+        <p><a href="mailto:cwieb255@evit.com">cwieb255@evit.com</a></p>
+    </footer> 
 </body>
 <style>
+    /* The img tag will place a white border once hovered */
     body {
        background: #3C4C60; 
     }
@@ -32,9 +38,8 @@
         color:white;
         font-family:'Courier New', Courier, monospace
     }
-    img {
-        border: white;
+    div > img:hover{
+        border: 3px solid white;
     }
-
 </style>
 </html>
