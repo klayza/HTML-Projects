@@ -6,10 +6,15 @@
 }
 
 .dark-theme {
+    --background-image: url("https://backgroundlabs.com/wp-content/uploads/2013/02/futuristic-grid.png");
     --background-color: #1f1e1e;
     --foreground-color: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.fireworks-videos.com/wp-content/uploads/2020/05/2020-05-17_colorful-night-sky_stars-and-milky-way_2160p.jpg") no-repeat fixed center; 
     --accent-color: #e89173;
     --font-color: #e9c6ba;
+}
+
+html {
+    border-image: url("assets/diag.png") 30;
 }
 
 body{
@@ -79,6 +84,22 @@ span.a {
     height: 30px;
 }
 
+.rotate45 {
+    -webkit-transform: rotate(-48deg);
+    -moz-transform: rotate(-48deg);
+    -o-transform: rotate(-48deg);
+    -ms-transform: rotate(-48deg);
+    transform: rotate(-48deg);
+}
+
+#left > *{
+    text-align: left;
+}
+
 #icon{
     cursor: pointer;
+}
+
+div > *:has(#music){
+    filter: blur(3px);
 }
